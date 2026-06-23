@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Alex Mercer - Front-End Developer Portfolio & Smart Product Listing App"/>
+  <title>Alex Mercer | Developer & Product Showcase</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Google Fonts: Syne (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AM<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home"     class="nav-link">Home</a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#skills"   class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#products" class="nav-link">Shop</a>
+        <a href="#notes"    class="nav-link">Notes</a>
+        <a href="#contact"  class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Front-End Developer &amp; UI Designer</p>
+        <h1 class="hero-title">
+          Hi, I'm <span class="hero-name">Alex Mercer</span><span class="cursor-blink">_</span>
+        </h1>
+        <p class="hero-sub">
+          I craft fast, accessible, and delightful web experiences — from pixel-perfect interfaces to full-stack JavaScript projects.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact"  class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Client Satisfaction</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" class="avatar-svg">
+              <circle cx="60" cy="45" r="26" fill="#a78bfa"/>
+              <ellipse cx="60" cy="105" rx="42" ry="30" fill="#a78bfa"/>
+              <circle cx="60" cy="45" r="22" fill="#ede9fe"/>
+              <circle cx="52" cy="42" r="4" fill="#6d28d9"/>
+              <circle cx="68" cy="42" r="4" fill="#6d28d9"/>
+              <path d="M50 54 Q60 62 70 54" stroke="#6d28d9" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <p class="section-eyebrow">Who I am</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a passionate front-end developer based in San Francisco with a love for building clean, performant web interfaces. My journey started with pure HTML curiosity, grew into JavaScript obsession, and eventually expanded into full-stack territory.</p>
+            <p>When I'm not pushing pixels, I'm contributing to open-source projects, writing articles on web performance, or experimenting with creative coding. I believe great software is the intersection of clean code and thoughtful design.</p>
+            <div class="about-badges">
+              <span class="badge">Open to Work</span>
+              <span class="badge">Remote Friendly</span>
+              <span class="badge">Based in SF</span>
+            </div>
+          </div>
+          <div class="about-facts">
+            <div class="fact-card">
+              <span class="fact-icon">🎓</span>
+              <div>
+                <strong>B.Sc. Computer Science</strong>
+                <span>Stanford University, 2022</span>
+              </div>
+            </div>
+            <div class="fact-card">
+              <span class="fact-icon">💼</span>
+              <div>
+                <strong>Front-End Intern</strong>
+                <span>Google — Summer 2023</span>
+              </div>
+            </div>
+            <div class="fact-card">
+              <span class="fact-icon">🏆</span>
+              <div>
+                <strong>HackMIT Winner</strong>
+                <span>Best UI/UX Category</span>
+              </div>
+            </div>
+            <div class="fact-card">
+              <span class="fact-icon">📝</span>
+              <div>
+                <strong>Technical Blogger</strong>
+                <span>2.4K Monthly Readers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         SKILLS
+    ═══════════════════════════════════ -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <p class="section-eyebrow">What I know</p>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frontend</h3>
+            <div class="skill-bars">
+              <div class="skill-item" data-skill="HTML5 / CSS3" data-pct="95"></div>
+              <div class="skill-item" data-skill="JavaScript (ES6+)" data-pct="90"></div>
+              <div class="skill-item" data-skill="React.js" data-pct="85"></div>
+              <div class="skill-item" data-skill="Tailwind CSS" data-pct="88"></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Backend &amp; Tools</h3>
+            <div class="skill-bars">
+              <div class="skill-item" data-skill="Node.js" data-pct="75"></div>
+              <div class="skill-item" data-skill="Git / GitHub" data-pct="92"></div>
+              <div class="skill-item" data-skill="Figma" data-pct="80"></div>
+              <div class="skill-item" data-skill="REST APIs" data-pct="82"></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Concepts</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Accessibility (a11y)</span>
+              <span class="skill-tag">Web Performance</span>
+              <span class="skill-tag">Local Storage API</span>
+              <span class="skill-tag">DOM Manipulation</span>
+              <span class="skill-tag">Flexbox &amp; Grid</span>
+              <span class="skill-tag">UI/UX Principles</span>
+              <span class="skill-tag">Component Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         PROJECTS
+    ═══════════════════════════════════ -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <p class="section-eyebrow">What I've built</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card project-card--featured">
+            <div class="project-chip">Featured</div>
+            <div class="project-preview project-preview--1">
+              <div class="preview-dots"><span></span><span></span><span></span></div>
+              <div class="preview-bars">
+                <div class="pbar pbar--wide pbar--accent"></div>
+                <div class="pbar pbar--med"></div>
+                <div class="pbar pbar--sm"></div>
+                <div class="pbar pbar--wide"></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>SmartCart E-Commerce Platform</h3>
+              <p>Full-featured product listing with filtering, sorting, cart management, and localStorage persistence. Built for performance.</p>
+              <div class="project-tags"><span>JavaScript</span><span>CSS Grid</span><span>LocalStorage</span></div>
+              <div class="project-links">
+                <a href="#" class="proj-link">Live Demo ↗</a>
+                <a href="#" class="proj-link proj-link--ghost">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-preview project-preview--2">
+              <div class="preview-dots"><span></span><span></span><span></span></div>
+              <div class="preview-bars">
+                <div class="pbar pbar--sm pbar--accent"></div>
+                <div class="pbar pbar--wide"></div>
+                <div class="pbar pbar--med"></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>DevTask — Kanban Board</h3>
+              <p>Drag-and-drop task management tool with real-time local state syncing and dark mode support.</p>
+              <div class="project-tags"><span>React</span><span>DnD</span><span>LocalStorage</span></div>
+              <div class="project-links">
+                <a href="#" class="proj-link">Live Demo ↗</a>
+                <a href="#" class="proj-link proj-link--ghost">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-preview project-preview--3">
+              <div class="preview-dots"><span></span><span></span><span></span></div>
+              <div class="preview-bars">
+                <div class="pbar pbar--med pbar--accent"></div>
+                <div class="pbar pbar--sm"></div>
+                <div class="pbar pbar--wide"></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>WeatherNow — PWA Dashboard</h3>
+              <p>Progressive Web App with geolocation, OpenWeatherMap API integration, and offline support via Service Workers.</p>
+              <div class="project-tags"><span>PWA</span><span>API</span><span>ServiceWorker</span></div>
+              <div class="project-links">
+                <a href="#" class="proj-link">Live Demo ↗</a>
+                <a href="#" class="proj-link proj-link--ghost">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         PRODUCT LISTING (Shop)
+    ═══════════════════════════════════ -->
+    <section class="section products" id="products">
+      <div class="container">
+        <p class="section-eyebrow">Browse the catalog</p>
+        <h2 class="section-title">Product Showcase</h2>
+
+        <!-- Filter & Sort Controls -->
+        <div class="controls-bar">
+          <div class="controls-left">
+            <!-- Category filter tabs -->
+            <div class="filter-tabs" id="categoryTabs" role="group" aria-label="Filter by category">
+              <button class="filter-tab active" data-cat="all">All</button>
+              <button class="filter-tab" data-cat="Electronics">Electronics</button>
+              <button class="filter-tab" data-cat="Wearables">Wearables</button>
+              <button class="filter-tab" data-cat="Audio">Audio</button>
+              <button class="filter-tab" data-cat="Accessories">Accessories</button>
+            </div>
+          </div>
+          <div class="controls-right">
+            <!-- Price range -->
+            <div class="price-range-wrap">
+              <label class="control-label" for="priceRange">Up to <strong id="priceDisplay">$1500</strong></label>
+              <input type="range" id="priceRange" min="0" max="1500" value="1500" step="50" class="price-slider"/>
+            </div>
+            <!-- Sort -->
+            <div class="sort-wrap">
+              <label class="control-label" for="sortSelect">Sort</label>
+              <select id="sortSelect" class="sort-select">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low → High</option>
+                <option value="price-desc">Price: High → Low</option>
+                <option value="rating-desc">Highest Rated</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product results count -->
+        <p class="results-count" id="resultsCount"></p>
+
+        <!-- Product Grid -->
+        <div class="products-grid" id="productsGrid"></div>
+
+        <!-- Empty state -->
+        <div class="empty-state hidden" id="emptyState">
+          <span class="empty-icon">🔍</span>
+          <p>No products match your filters. Try adjusting the price range or category.</p>
+          <button class="btn btn-primary" onclick="resetFilters()">Reset Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         NOTES / TO-DO (LocalStorage)
+    ═══════════════════════════════════ -->
+    <section class="section notes" id="notes">
+      <div class="container">
+        <p class="section-eyebrow">Saved locally</p>
+        <h2 class="section-title">Quick Notes</h2>
+        <p class="section-desc">Jot down ideas, tasks, or anything else. Your notes are saved automatically and survive page refreshes.</p>
+
+        <div class="notes-layout">
+          <!-- Add Note form -->
+          <div class="note-composer">
+            <div class="composer-card">
+              <h3 class="composer-title">New Note</h3>
+              <input type="text"  id="noteTitle" placeholder="Note title…"   class="note-input" maxlength="60"/>
+              <textarea           id="noteBody"  placeholder="Note content…" class="note-textarea" rows="4" maxlength="300"></textarea>
+              <div class="composer-footer">
+                <span class="char-count" id="charCount">0 / 300</span>
+                <button class="btn btn-primary" id="addNoteBtn">Save Note</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Note list -->
+          <div class="notes-list-wrap">
+            <div class="notes-list-header">
+              <span id="noteCountBadge" class="note-count-badge">0 notes</span>
+              <button class="btn-clear" id="clearAllBtn">Clear all</button>
+            </div>
+            <div class="notes-list" id="notesList">
+              <!-- notes injected by JS -->
+            </div>
+            <div class="notes-empty hidden" id="notesEmpty">
+              <span>📝</span>
+              <p>No notes yet. Add your first one!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <p class="section-eyebrow">Let's talk</p>
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>I'm currently open to internship and junior developer opportunities. Feel free to reach out — I respond within 24 hours.</p>
+            <div class="contact-items">
+              <a href="mailto:alex@example.com" class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <span>alex@example.com</span>
+              </a>
+              <a href="tel:+14155551234" class="contact-item">
+                <span class="contact-icon">📞</span>
+                <span>+1 (415) 555-1234</span>
+              </a>
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <span>San Francisco, CA</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="GitHub">GH</a>
+              <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+              <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name">Your Name</label>
+                <input type="text" id="cf-name" placeholder="Jane Smith" required/>
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" placeholder="jane@company.com" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" placeholder="Internship Opportunity"/>
+            </div>
+            <div class="form-group">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" rows="5" placeholder="Tell me about the role…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+            <p class="form-success hidden" id="formSuccess">✅ Message sent! I'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">AM<span class="logo-dot">.</span></span>
+        <p>© 2025 Alex Mercer · Built with HTML, CSS &amp; JavaScript</p>
+        <a href="#home" class="back-top" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
